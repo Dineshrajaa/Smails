@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />        
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/smails.js"></script>
+        <title>Smails</title>
+    </head>
+    <body>
+        <section data-role="page" id="home">
+            <header data-role="header" data-theme="b" data-position="fixed">
+                <a href="#" id="mailbtn" data-role="button" data-icon="mail" data-iconpos="notext">Email</a>
+                <h1>Smails</h1>
+                <a href="#" id="smsbtn" data-role="button" data-icon="comment" data-iconpos="notext">SMS</a>
+            </header>
+            <article data-role="main">
+            <center>
+                <div id="info">
+                    <h1>Welcome to Smails Service</h1>
+                    <p>You Can use Smails for Sending eMails and SMS</p>
+                </div> 
+            </center>               
+            </article>
+            <footer data-role="footer" data-theme="b" data-position="fixed">
+                <h1>&copy All Rights Reserved</h1>
+            </footer>
+        </section>
+        <section data-role="page" id="sms-page">
+            <header data-role="header" data-theme="b" data-position="fixed">
+                <a href="#" data-role="button" data-icon="back" data-iconpos="notext" data-rel="back"></a>
+                <h1>Smails-SMS</h1>
+            </header>
+            <article data-role="main">
+               <label for="recieverbox">Number:</label>
+               <input type="text" id="recieverbox"> 
+               <label for="msgbox">Message:</label>
+               <textarea id="msgbox"></textarea>
+               <input type="button" id="sendbtn" value="SEND" data-role="check">
+            </article> 
+            <footer data-role="footer" data-theme="b" data-position="fixed">
+                <h1>&copy All rights reserved</h1>
+            </footer>
+        </section>
+        <script type="text/javascript" src="cordova.js"></script>        
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.dinesh.smails" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Smails</name>
+    <description>
+        A simple Apache Cordova application used to illustrate SMS and e-Mail Plugins.
+    </description>
+    <author email="dineshrajaa.93@gmail.com" href="http://cordova.io">
+        Dinesh Raja
+    </author>
+
+    <preference name="phonegap-version"   value="3.6.3" />
+    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="orientation"        value="default" />
+    <preference name="target-device"      value="universal" />
+    <preference name="fullscreen"         value="false" />
+    <preference name="webviewbounce"      value="true" />
+    <preference name="prerendered-icon"   value="false" />
+    <preference name="stay-in-webview"    value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types"  value="true" /> 
+    <preference name="exit-on-suspend"    value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen"    value="true" />
+    <preference name="android-installLocation"    value="auto" />
+    <preference name="SplashScreenDelay" value="10000" />
+
+
+    <!--3rd-Party Plugins-->
+    <gap:plugin name="de.appplant.cordova.plugin.email-composer" />
+    <gap:plugin name="info.ivanezko.phonegap.smsplugin" version="0.2.1" />
+    <gap:plugin name="nl.x-services.plugins.toast" version="2.0.2" />
+    <!--ICON FOR ALL-->
+    <icon src="icon.png" />
+
+    
+
+    <!--SPLASH SCREEN FOR ALL-->
+    <gap:splash src="splash.png" />
+    
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
