@@ -4,7 +4,7 @@
     <description>
         A simple Apache Cordova application used to illustrate SMS and e-Mail Plugins.
     </description>
-    <author email="dineshrajaa.93@gmail.com" href="http://cordova.io">
+    <author email="dineshkumar.r@cgvakindia.com" href="http://cordova.io">
         Dinesh Raja
     </author>
 
@@ -23,13 +23,14 @@
     <preference name="auto-hide-splash-screen"    value="true" />
     <preference name="android-installLocation"    value="auto" />
     <preference name="SplashScreenDelay" value="10000" />
-
-
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <!--Core Plugins-->
+    <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
     <!--3rd-Party Plugins-->
     <gap:plugin name="de.appplant.cordova.plugin.email-composer" />
     <gap:plugin name="info.ivanezko.phonegap.smsplugin" version="0.2.1" />
     <gap:plugin name="nl.x-services.plugins.toast" version="2.0.2" />
-    <!--ICON FOR ALL-->
+        <!--ICON FOR ALL-->
     <icon src="icon.png" />
 
     
